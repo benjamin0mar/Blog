@@ -1,0 +1,53 @@
+$font: 'Armata', sans-serif
+
+%transition
+  -webkit-transition: all .4s ease
+  -moz-transition: all .4s ease
+  -ms-transition: all .4s ease
+  -o-transition: all .4s ease
+  transition: all .4s ease
+
+%small-bold
+  font:
+    size: 15px
+    weight: 200
+  text-transform: uppercase
+
+footer
+  background: url(../img/cover_footer.jpg) center center
+  background-size: cover
+  clear: fix
+  font-family: $font
+
+  .lockup
+    padding: 30px
+    display: flex
+    flex-flow: row
+    align-items: center
+    clear: both
+    .logo
+      height: 50px
+      width: 50px
+      margin-right: 30px
+      path
+        fill: rgba(31, 7, 24,.7)
+
+    .content-wrap
+      float: left
+
+      .copyright
+        margin: 0
+        text-transform: capitalize
+        font-size: 12px
+        color: rgba(31, 7, 24,.7)
+
+      a
+        @extend %small-bold
+        color: rgba(31, 7, 24,.7)
+        margin-right: 30px
+        text-decoration: none
+
+        @extend %transition
+
+        &:hover
+          color: rgba(31, 7, 24,1)

@@ -1,0 +1,28 @@
+<section class="alt-section section-work">
+      <h3 id="work">Work</h3>
+  <div class="work-belt">
+
+    <div class="thumb-wrap">
+          <div class="thumb-container">
+
+            {% for project in site.projects %}
+              <div class="thumb-unit" data-folder="{{project.folder}}" style="background-image: url(img/work/{{project.folder}}/img.jpg)">
+                <div class="thumb-overlay">
+                  <strong>{{project.name }}</strong>
+                  <div class="zoom-icon">{% include work-icons/{{project.icon}} %}</div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+    </div>
+      <div class="work-wrap">
+
+          <div class="work-container">
+            <div class="work-return">{% include work-icons/back.html %}</div>
+            <h4 class="project-title"></h4>
+            <div class="project-load"></div>
+          </div>
+      </div>
+
+</div>
+</section>

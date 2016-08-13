@@ -1,0 +1,33 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+port: 9000
+title: omar benjamin 
+email: benjamin0mar@hotmail.com
+description: Thinker // Designer // Engineer
+avatar: face.jpg
+blurb: <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, distinctio tempora. Aliquid unde tenetur ea totam fugit, ducimus rerum eaque dicta facere repellat ab, possimus, placeat corporis dolores aperiam laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores labore sequi est ex vitae quasi aperiam omnis enim quibusdam. Ipsum ipsam quo consequuntur illo magnam numquam eveniet praesentium nihil!
+skill: <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+projects:
+- {name: relax, folder: 'img1', icon: m.html}
+- {name: passion, folder: 'img2', icon: k.html}
+- {name: entreteiment, folder: 'img6', icon: tv.html}
+- {name: reponsabity, folder: 'img3', icon: s.html}
+- {name: imagination, folder: 'img4', icon: br.html}
+- {name: health, folder: 'img5', icon: h.html}
+- {name: art, folder: 'img7', icon: p.html}
+- {name: fun, folder: 'img8', icon: fun.html}
+
+skills:
+- {name: Programming, skill: '8'}
+- {name: UX Design, skill: '7'}
+- {name: Teaching, skill: '7'}
+- {name: Planning, skill: '8'}
+- {name: Organization, skill: '6'}
+- {name: Communication, skill: '5'}

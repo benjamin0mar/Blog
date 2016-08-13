@@ -1,0 +1,25 @@
+<section>
+  <h3>About Myself</h3>
+<div class="face-lockup">
+
+    <div class="face-img" style="background: url(img/{{site.avatar}})"></div>
+    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
+    <div class="icon-ball">{% include icons/icon-basketball.html %}</div>
+    <div class="icon-term">{% include icons/icon-terminal.html %}</div>
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+
+</div>
+
+<div class="blurb">{{site.blurb}}</div>
+
+<div class="skill-lockup">
+    {% for skill in site.skills %}
+  <div class="skill-unit">
+    <div class="skill-label">{{skill.name}} </div>
+      <div class="skill-icons skill-{{skill.skill}}">
+        {{site.skill}}
+      </div>
+  </div>
+    {% endfor %}
+
+</section>
