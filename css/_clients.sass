@@ -1,0 +1,94 @@
+$accent: tomato
+$bgcolor:  rgba(31, 7, 24,.9)
+$font: 'Poiret One', cursive
+$color: rgba(31, 7, 24,.7)
+
+.section-clients
+  position: relative
+
+
+.clients-belt
+  width: 100%
+  position: relative
+
+  .client-unit
+    max-width: 750px
+    margin: 0 auto
+    display: flex
+
+    .client-face
+      min-width: 300px
+      text-align: center
+      img
+        margin-top: 15px
+        max-width: 150px
+        border-radius: 5%
+      .client-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+      .client-title
+        font-style: none
+        font-size: 12px
+        color: #999
+    .client-content
+      font-size: 16px
+      line-height: 36px
+      font-weight: 300
+      position: relative
+      text-align: justify
+
+.clients-logos
+  position: relative
+  width: 100%
+  max-width: 750px
+  margin: 50px auto
+  display: flex
+  justify-content: center
+
+  .client-logo
+    height: 40px
+    min-width: 200px
+    background:
+      image: url(../img/clients/logo-stackoverflow.png)
+      size: contain
+      position: center
+      repeat: no-repeat
+    cursor: pointer
+    margin: 0 20px
+    border-bottom: 5px solid rgba(0,0,0,0)
+    box-sizing: border-box
+
+    &.active-client
+      box-shadow: 0px 4px 0px $accent
+.client-quote-mark
+  position: absolute
+  top: -10px
+  left: -10px
+  width: 60px
+  height: 60px
+  z-index: -1
+  opacity: 0.2
+  path
+    fill: $accent
+.client-controls
+  position: absolute
+  width: 100%
+  > div
+    width: 40px
+    height: 40px
+    margin-top: 20px
+
+  .client-control-next
+    position: absolute
+    top: 50%
+    right: 10px
+    path
+      fill: $color
+  .client-control-prev
+    position: absolute
+    top: 50%
+    left: 10px
+    path
+      fill: $color
