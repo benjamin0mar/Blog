@@ -24,6 +24,7 @@ header
   height: 450px
   background: url(../img/cover.jpg) center center
   background-size: cover
+  background-repeat: no-repeat
   font-family: $font
 
 
@@ -38,7 +39,7 @@ header
 
   nav
     float: right
-    margin: 30px 30px 0 0
+    padding: 30px 30px 0 0
     display: flex
     flex-flow: row
     align-items: center
@@ -84,3 +85,15 @@ header
     color: tomato
     line-height: 1
     text-transform: uppercase !important
+
+@media (max-width: 800px)
+  header
+    .logo
+      display: none
+
+    nav
+      float: none
+      width: 100%
+      display: flex
+      justify-content: center
+      flex-wrap: wrap

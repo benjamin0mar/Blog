@@ -1,0 +1,37 @@
+form {
+  max-width: 450px;
+  margin: 0 auto 50px; }
+  form input, form textarea {
+    border: 3px solid tomato;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: none; }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: rgba(31, 7, 24, 0.9); }
+  form .submit-wrap {
+    text-align: right;
+    width: 33%; }
+  form [type="submit"] {
+    background-color: tomato;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase; }
+    form [type="submit"]:hover {
+      background-color: #ff5638; }
+  form .contact-info-group label {
+    width: 50%;
+    float: left;
+    box-sizing: border-box; }
+    form .contact-info-group label:nth-child(1) {
+      padding-rigth: 5px; }
+    form .contact-info-group label:nth-child(2) {
+      padding-left: 5px; }
+  form label {
+    display: block;
+    margin-bottom: 20px; }
+    form label span {
+      display: block; }
+
+/*# sourceMappingURL=form.css.map */

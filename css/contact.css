@@ -1,0 +1,39 @@
+.section-contact {
+  text-align: center; }
+
+.social-links {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-around; }
+  .social-links a {
+    display: block;
+    background-color: tomato;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-radius: 50%;
+    font-size: 28px;
+    transition: all ease 0.2s; }
+    .social-links a:hover {
+      transform: scale(1.2); }
+
+.bar {
+  width: 250px;
+  height: 0px;
+  border-top: 4px solid tomato;
+  margin: 0 auto 70px; }
+
+.biglink {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 300;
+  text-decoration: none;
+  color: tomato;
+  line-height: 1;
+  margin: 0 auto 70px; }
+
+/*# sourceMappingURL=contact.css.map */

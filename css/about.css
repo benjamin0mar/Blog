@@ -25,7 +25,7 @@ h3 {
     width: 200px;
     border-radius: 50%;
     order: 3; }
-  .face-lockup [class^="icon-"] {
+  .face-lockup [class^="icons-"] {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -35,15 +35,15 @@ h3 {
     width: 100px;
     border-radius: 50%;
     background-color: rgba(31, 7, 24, 0.9); }
-    .face-lockup [class^="icon-"] path {
+    .face-lockup [class^="icons-"] path {
       fill: tomato; }
-    .face-lockup [class^="icon-"].icon-mouse {
+    .face-lockup [class^="icons-"].icons-mouse {
       order: 1; }
-    .face-lockup [class^="icon-"].icon-ball {
+    .face-lockup [class^="icons-"].icons-ball {
       order: 2; }
-    .face-lockup [class^="icon-"].icon-term {
+    .face-lockup [class^="icons-"].icons-term {
       order: 4; }
-    .face-lockup [class^="icon-"].icon-pencil {
+    .face-lockup [class^="icons-"].icons-pencil {
       order: 5; }
 
 @media screen and (max-width: 750px) {

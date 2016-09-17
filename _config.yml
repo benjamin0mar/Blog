@@ -7,8 +7,8 @@
 
 # Site settings
 port: 9000
-title: omar benjamin 
-email: benjamin0mar@hotmail.com
+title: omar benjamin
+email: benjaminomar34@gmail.com
 description: Thinker // Designer // Engineer
 avatar: face.jpg
 blurb: <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, distinctio tempora. Aliquid unde tenetur ea totam fugit, ducimus rerum eaque dicta facere repellat ab, possimus, placeat corporis dolores aperiam laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores labore sequi est ex vitae quasi aperiam omnis enim quibusdam. Ipsum ipsam quo consequuntur illo magnam numquam eveniet praesentium nihil!
@@ -31,3 +31,10 @@ skills:
 - {name: Planning, skill: '8'}
 - {name: Organization, skill: '6'}
 - {name: Communication, skill: '5'}
+
+
+clients:
+- {avatar: 'face-1.jpg', name: 'Elliot Alderson', title: 'Director of Programming', quote: '<strong>Lorem ipsum dolor sit amet. </strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', logo: 'logo-stackoverflow.png'}
+- {avatar: 'face-2.jpg', name: 'Angela Moss', title: 'Director of Programming', quote: '<strong>Lorem ipsum dolor sit amet. </strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', logo: 'logo-spotify.png'}
+- {avatar: 'face-3.jpg', name: 'Darlene', title: 'Director of Programming', quote: '<strong>Lorem ipsum dolor sit amet. </strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', logo: 'logo-github.png'}
+- {avatar: 'face-4.jpg', name: 'Mr. Robot', title: 'Director of Programming', quote: '<strong>Lorem ipsum dolor sit amet. </strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', logo: 'logo-behance.png'}

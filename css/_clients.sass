@@ -3,6 +3,24 @@ $bgcolor:  rgba(31, 7, 24,.9)
 $font: 'Poiret One', cursive
 $color: rgba(31, 7, 24,.7)
 
+
+
+@-webkit-keyframes fadeInUp
+  0%
+    opacity: 0
+    -webkit-transform: translateY(20px)
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+
+@-webkit-keyframes BounceUp
+  0%
+    opacity: 1
+    -webkit-transform: translateY(-10px)
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0px)
+
 .section-clients
   position: relative
 
@@ -13,8 +31,17 @@ $color: rgba(31, 7, 24,.7)
 
   .client-unit
     max-width: 750px
-    margin: 0 auto
+    margin: 50px auto
     display: flex
+    position: relative
+    z-index: 1
+    display: none
+    &.active-client
+      display: flex
+      flex-direction: row
+      animation: fadeInUp .3s
+
+
 
     .client-face
       min-width: 300px
@@ -38,30 +65,30 @@ $color: rgba(31, 7, 24,.7)
       font-weight: 300
       position: relative
       text-align: justify
+      margin: 0 auto
 
 .clients-logos
   position: relative
   width: 100%
   max-width: 750px
-  margin: 50px auto
+  margin: 50px auto 100px
   display: flex
-  justify-content: center
+  justify-content: space-around
+  align-content: flex-end
 
   .client-logo
     height: 40px
-    min-width: 200px
-    background:
-      image: url(../img/clients/logo-stackoverflow.png)
-      size: contain
-      position: center
-      repeat: no-repeat
     cursor: pointer
     margin: 0 20px
-    border-bottom: 5px solid rgba(0,0,0,0)
-    box-sizing: border-box
-
+    opacity: 0.5
+    padding-bottom: 10px
+    border-bottom: 4px solid transparent
     &.active-client
-      box-shadow: 0px 4px 0px $accent
+      animation: BounceUp .3s
+      opacity: 1
+      border-bottom: 4px solid $accent
+
+
 .client-quote-mark
   position: absolute
   top: -10px
@@ -81,14 +108,52 @@ $color: rgba(31, 7, 24,.7)
     margin-top: 20px
 
   .client-control-next
+    cursor: pointer
     position: absolute
     top: 50%
     right: 10px
     path
       fill: $color
   .client-control-prev
+    cursor: pointer
     position: absolute
     top: 50%
     left: 10px
     path
       fill: $color
+
+.clients-mobile-nav
+  text-align: center
+  display: none
+  span
+    cursor: pointer
+    display: inline-block
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background-color: $bgcolor
+    margin: 0 10px
+    &.active-client
+      background-color: $accent
+
+
+@media screen and (max-width: 750px)
+  .clients-mobile-nav
+    display: block
+  .client-controls
+    display: none
+  .clients-belt
+    .client-unit.active-client
+      display: block
+      position: relative
+      margin-left: 0
+      left: auto
+    .client-face
+      margin-bottom: 20px
+    .client-content
+      padding: 0 30px
+      max-width: 400px
+    .client-quote-mark
+      left: 20px
+  .clients-logos
+    display: none
